@@ -1,3 +1,4 @@
+import Styles from "./Styles"
 import UserProps from "./UserProps"
 
 function Props() {
@@ -13,6 +14,7 @@ function Props() {
                 }
 
             />
+            <Styles/>
         </>
     )
 
