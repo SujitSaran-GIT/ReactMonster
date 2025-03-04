@@ -2,6 +2,7 @@ import React from 'react'
 import { FaCartArrowDown } from 'react-icons/fa'
 import { FaComputer } from 'react-icons/fa6'
 import StyleCard from '../StyleChallenge/StyleCard'
+import EventHandling from './EventHandling'
 
 const Styles = () => {
     // Instead of writting this we have to create an object 
@@ -29,6 +30,7 @@ const Styles = () => {
             </div>
 
             <StyleCard/>
+            <EventHandling/>
         </>
     )
 }
