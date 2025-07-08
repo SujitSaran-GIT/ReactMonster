@@ -12,8 +12,8 @@ const TransitionEvents = () => {
                 onTransitionRun={() => console.log("Transition Run")}
                 style={{
                     width: expanded ? "200px" : "100px",
-                    height: "100px",
-                    backgroundColor: "blue",
+                    height: expanded ? "200px" : "100px",
+                    backgroundColor: expanded ? "blue" : "red",
                     transition: "width 2s ease-in-out",
                     marginTop: "10px",
                 }}

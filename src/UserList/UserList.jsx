@@ -31,6 +31,17 @@ function UserList(){
                 </ul>
             )) }
         </div>
+
+        <div>
+            {
+                users.map(({id,name,age}) =>(
+                    <ul key={id}>
+                        <li>{name}</li>
+                        <li>{age}</li>
+                    </ul>
+                ))
+            }
+        </div>
         <ProductList/>
         </>
     )

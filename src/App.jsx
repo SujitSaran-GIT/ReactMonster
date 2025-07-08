@@ -6,6 +6,7 @@ import Greet from './components/Greet'
 import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer'
+import Counter from './redux/Counter'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
      <Greet/>
      <Header/>
      <MainContent/>
+     <Counter/>
      <Footer/>
     </div>
   )

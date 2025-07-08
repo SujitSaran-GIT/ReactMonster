@@ -1,8 +1,11 @@
 function Footer(){
+    const date = new Date()
+    const currentYear = date.getFullYear()
+    console.log(date.getFullYear())
     return(
         <>
         <footer>
-            <p>@2024 My Website</p>
+            <p>@{currentYear} My Website</p>
         </footer>
         </>
     )

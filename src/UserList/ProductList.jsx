@@ -31,6 +31,17 @@ function ProductList(){
                 </ul>
             ))}
         </div>
+
+        <div>
+            {
+                products.map((product) => (
+                    <ul key={product.id}>
+                        <li>{product.name}</li>
+                        <li>{product.price}</li>
+                    </ul>
+                ))
+            }
+        </div>
         <Props/>
         </>
     )

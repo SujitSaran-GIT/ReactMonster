@@ -1,11 +1,20 @@
 import React from 'react'
 import MouseEvents from '../EventHandling/MouseEvents'
 import TransitionEvents from '../EventHandling/TransitionEvents'
+import UseStateHook from '../StateAndHooks/Hooks/UseStateHook'
 
 const Button = () => {
+  // Onclick Click Here Random numbers are generated
+  const handleClick = () => {
+    const numbers = Math.round(Math.random() * 10)
+    alert(`Generated Numbers: ${numbers}`)
+  }
     return(
         <>
         <button onClick={() => alert("Clicked Successfully")}>Click Here</button>
+
+        <button onClick={handleClick}>Click Here to generate random numbers</button>
+
         </>
     )
 }
@@ -34,6 +43,7 @@ const EventHandling = () => {
       <Move/>
       <MouseEvents/>
       <TransitionEvents/>
+      <UseStateHook/>
     </>
   )
 }
